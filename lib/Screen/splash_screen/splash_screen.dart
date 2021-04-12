@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kai/Screen/homepage.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -7,10 +8,16 @@ class SplashScreen extends StatelessWidget {
       // backgroundColor: Color(0xff2268a9),
       body: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            color: Color(0xff2268a9),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => HomePage()));
+            },
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              color: Color(0xff2268a9),
+            ),
           ),
           Center(
             child:

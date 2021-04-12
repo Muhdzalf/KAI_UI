@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kai/component/banner_list.dart';
+import 'package:kai/component/bookingtitle.dart';
+import 'package:kai/component/pointcart_card.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -14,6 +16,8 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Banner_List(),
+          PointCart_tab(),
+          BookingTitle(),
         ],
       ),
     );
