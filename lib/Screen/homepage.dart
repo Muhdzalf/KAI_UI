@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
+import 'package:kai/component/banner_list.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,6 +11,11 @@ class HomePage extends StatelessWidget {
           backgroundColor: Color(0xff2268a9),
           title: Image(
               width: 60, image: AssetImage('assets/images/kai_whitee.png'))),
+      body: Column(
+        children: [
+          Banner_List(),
+        ],
+      ),
     );
   }
 }
